@@ -16,9 +16,9 @@ class Telegram:
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', "true")  # Default to "true" if not set in the environment
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
-    FILE_PIC = env.get('FILE_PIC', "https://graph.org/file/5bb9935be0229adf98b73.jpg")
+    FILE_PIC = env.get('FILE_PIC', "https://envs.sh/9yS.jpg")
     START_PIC = env.get('START_PIC', "https://envs.sh/9yh.jpg")
-    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/9yS.jpg")
+    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/vhT.jpg")
     MULTI_CLIENT = False
     FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", None))   # Logs channel for file logs
     ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", None))   # Logs channel for user logs
@@ -28,7 +28,7 @@ class Telegram:
 
 class Server:
     PORT = int(env.get("PORT", 8080))
-    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "0.0.0.0"))
+    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "https://dsfile-ae2e63c0757b.herokuapp.com/"))
     PING_INTERVAL = int(env.get("PING_INTERVAL", "1200"))
     HAS_SSL = str(env.get("HAS_SSL", "0").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "0").lower()) in ("1", "true", "t", "yes", "y")
