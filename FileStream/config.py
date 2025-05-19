@@ -7,12 +7,12 @@ class Telegram:
     API_ID = int(env.get("API_ID"))
     API_HASH = str(env.get("API_HASH"))
     BOT_TOKEN = str(env.get("BOT_TOKEN"))
-    OWNER_ID = int(env.get('OWNER_ID', '7978482443'))
+    OWNER_ID = int(env.get('OWNER_ID', '6116993643'))
     WORKERS = int(env.get("WORKERS", "1000"))  # 6 workers = 6 commands at once
     DATABASE_URL = str(env.get('DATABASE_URL'))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
-    FORCE_SUB_ID = env.get('FORCE_SUB_ID', '-1002015853674')  # Replace <Your_Channel_ID> with your actual channel ID
+    FORCE_SUB_ID = env.get('FORCE_SUB_ID', '-1002669500364')  # Replace <Your_Channel_ID> with your actual channel ID
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', "true")  # Default to "true" if not set in the environment
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
